@@ -13,6 +13,12 @@ B5M.com 前端样式库
 1. 网页宽度统一设定
 
 	样式名：`.wrap`
+	<pre><code>
+		.wrap{
+			width: 980px;
+			margin: 0 auto;
+		}
+	</code></pre>
 
 2. 清除浮动
 	
