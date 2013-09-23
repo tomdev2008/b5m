@@ -36,51 +36,52 @@ B5M.WEB前端开发标准
 1. 文件夹名称统一由小写的英文字母、数字、下划线、英文句号组合而成，不允许使用汉字、空格、特殊字符  
 2. 文件夹名称要能直观的体现当前文件夹的项目或版本  
 	例：  
-	* 帮5买   www  
-	* 韩国馆  korea    
-	* 淘物价  tao    
-			  tao_1.0  淘特价1.0版本  
+	帮5买   www  
+	韩国馆  korea    
+	淘物价  tao    
+			tao_1.0  淘特价1.0版本  
 
 
 ### 2.2 文件命名
 
-要求：
-文件名称统一由小写的英文字母、数字、下划线组合而成，不允许使用汉字、空格、特殊字符
-文件名称要能直观的体现当前文件的文件类型、项目、内容性质
+要求：  
+1. 文件名称统一由小写的英文字母、数字、下划线组合而成，不允许使用汉字、空格、特殊字符  
+2. 文件名称要能直观的体现当前文件的文件类型、项目、内容性质  
 例：       
-    HTML文件：项目名/内容性质.html  
- 	    淘特价首页	/tao/index.html
-        淘持价列表	/tao/list.html
-
-	CSS文件：项目名称.css
-	    公共样式	common.css
+    HTML文件：项目名/内容性质.html    
+ 	    淘特价首页	/tao/index.html  
+        淘持价列表	/tao/list.html  
+  
+	CSS文件：项目名称.css  
+	    公共样式	common.css  
 	    淘特价样式	tao.css
 	    帮5游样式	you.css
-
-	JS文件：公共框架：框架名+版本.js (必需是压缩版)
-		Jquery公共库	 jquery-1.9.1.min.js
-      	Jquery扩展	 jquery.easing.1.3.js
-      	注：所有基于jquery的扩展都必需使用官网的命名，不允许修改
+  
+	JS文件：公共框架：框架名+版本.js (必需是压缩版)  
+		Jquery公共库	 jquery-1.9.1.min.js  
+      	Jquery扩展	 jquery.easing.1.3.js  
+      	注：所有基于jquery的扩展都必需使用官网的命名，不允许修改  
       	所有引用的第三方扩展需同团队成员共同讨论决定  
 
       	手写文件：内容性质.js
       	选项卡功能	tab.js
       	消息弹窗	message.js
 
+
 ### 2.3 变量命名
 
-要求：
-1. 变量名称统一由小写的英文字母、下划线、中划线组合而成，且符合语义，避免使用中文拼音
-2. id 、class必需由小写字母、中划线组成
-3. 为JavaScript预留钩子命名必须以 J_开头，如 J_tab
-4. JavaScript公共变量由大家字母、下划线组成，如 var USER_NAME
+要求：  
+1. 变量名称统一由小写的英文字母、下划线、中划线组合而成，且符合语义，避免使用中文拼音 
+2. id 、class必需由小写字母、中划线组成  
+3. 为JavaScript预留钩子命名必须以 J_开头，如 J_tab  
+4. JavaScript公共变量由大家字母、下划线组成，如 var USER_NAME  
 
 
 
 ## 三、网站前端架构规则
 
 ### 3.1 WEB静态资源CDN地址
-	http://staticcdn.b5m.com/
+http://staticcdn.b5m.com/  
 
 
 ###3.2 目录结构
@@ -115,7 +116,7 @@ B5M.WEB前端开发标准
 ## 四、HTML书写规范
 
 ### 4.1 基本要求
-1. 所有编码均遵循xhtml标准，标签、属性、属性命名必须由小写字母及下划线数字组成(特殊情况除外)， 且所有标签必须闭合，包括 br (<br />), hr(<hr />)等；属性值必须用双引号包括；
+1. 所有编码均遵循xhtml标准，标签、属性、属性命名必须由小写字母及下划线数字组成(特殊情况除外)， 且所有标签必须闭合，包括 br (&lt;br /&gt;), hr(&lt;hr /&gt;)等；属性值必须用双引号包括；
 
 2. 充分利用无兼容性问题的html自身标签，比如span、em、strong、optgroup、label等等；需要为html元素添加自定义属性的时候，首先要考虑下有没有默认的已有的合适标签去设置，如果没有，可以使用须以"data-"为前缀来添加自定义属性，避免使用"data:"等其他命名方式；
 
@@ -127,7 +128,7 @@ B5M.WEB前端开发标准
 
 6. 为JavaScript预留钩子class名，禁止为其写样式，如J_tab
 
-7. 特殊符号使用：尽可能使用代码替代: 比如 <(&lt)、>(&gt;)、空格(&nbsp;)等等；
+7. 特殊符号使用：尽可能使用代码替代: 比如 <(&lt;)、>(&gt;)、空格(&nbsp;)等等；
 
 8. 必须为含有描述性表单元素(input，textarea)添加label
 <code>
@@ -139,7 +140,7 @@ B5M.WEB前端开发标准
 
 
 ### 4.2 书写规则
-1. 使用HTML5标准文档结构
+1. 使用HTML5标准文档结构  
 <code>
 <!doctype html>
 <html>
@@ -155,27 +156,28 @@ B5M.WEB前端开发标准
 
 	</body>
 </html>
+</code>
 
-2. 设置文本为UTF-8
+2. 设置文本为UTF-8  
 `<meta charset="utf-8">`
 
-3. 设置 keywords
+3. 设置 keywords  
 `<meta name="keywords" content="关键字" />`
 
-4. 设置 description
+4. 设置 description  
 `<meta name="keywords" content="页面描述" />`
 
-5. 设置外链样式
+5. 设置外链样式  
 `<link rel="stylesheet" href="..." />`
 
-6. 设置JavaScript地址
-`<script src="..."></script>`
+6. 设置JavaScript地址  
+`<script src="..."></script>`  
 注：除非特殊需要，可以考虑将JavaScript放置页面底部
 
-7. 考虑运用DNS预获取（dns-prefetch）
+7. 考虑运用DNS预获取（dns-prefetch）  
 `<link rel=”dns-prefetch” href=”http://cdn.bang5mai.com”/>`
 
-8. 如为解决 IE 6 兼容性问题，要单独引用CSS
+8. 如为解决 IE 6 兼容性问题，要单独引用CSS  
 `<!--[if IE 6]>
 	<link rel="stylesheet" href="..." />
 <![endif]-->`
@@ -187,48 +189,56 @@ B5M.WEB前端开发标准
 ### 5.1 所有CSS标签、属性必须由小写字母、数字、中划线组合
 
 ### 5.2 非特殊情况下，样式文件必须外链至<head>… </head>之间，写法如下：
-	`<link rel="stylesheet" href="..." />`
-	如遇特殊情况可使用：<style>...</style> ，严重杜绝在元素标签里写样式（特殊情况除外）
+`<link rel="stylesheet" href="..." />`
+如遇特殊情况可使用：`<style>`...`</style>`` ，严重杜绝在元素标签里写样式（特殊情况除外）
 
 ### 5.3 尽量避免使用Filter
 	避免 CSS 表达式
 
 ### 5.4 单行形式适用于直接写在页面中和长文件的情况。声明写在一行。
-	`.selector { property:value;property:value; }`
+	```css
+	.selector { property:value;property:value; }
+	```
 
 ### 5.5 CSS3兼容书写形式和对齐方式
-	`.selector { 
+	```css
+	.selector { 
 		-webkit-box-shadow: 0 0 5px rgba(200, 200,200, 0.8);
 	    -moz-box-shadow: 0 0 5px rgba(200, 200,200, 0.8);
 	                          box-shadow: 0 0 5px rgba(200, 200,200, 0.8);
-	}`
+	}
+	```
 
 ### 5.6 CSS3中逗号分隔的长属性值
-	`.selector {
+	```css
+	.selector {
         box-shadow:
             1px 1px 1px #000,
             2px 2px 1px 1px #ccc inset;
         background-image:
             linear-gradient(#fff, #ccc),
             linear-gradient(#f3c, #4ec);
-    }`
+    }
+    ```
 
 ### 5.7 多个(>2)selector每个占一行
-	`.selector1,
+	```css
+	.selector1,
 	.selector2,
-	.selector3 { ... }`
+	.selector3 { ... }
+	```
 
 ### 5.8 规则声明的顺序：定位、盒模型（width/height/padding/border/margin）、行高、字体/字号/颜色、背景、CSS3效果等
 
 ### 5.9 避免滥用CSS Hack
 区别属性：
-<table width="300" style="margin-left:60px;">
+<table style="margin-left:60px;">
 <tbody><tr><td> IE6 </td><td style="text-align:left;"> _property:value 
 </td></tr><tr><td> IE6/7 </td><td style="text-align:left;"> *property:value 
 </td></tr><tr><td> IE6/7/8/9 </td><td style="text-align:left;"> property:value\9 
 </td></tr></tbody></table>
 区别规则：
-<table width="70%" style="margin-left:60px;">
+<table style="margin-left:60px;">
 <tbody><tr><td> IE6 </td><td style="text-align:left;"> * html selector { ... } 
 </td></tr><tr><td> IE7 </td><td style="text-align:left;"> *:first-child+html selector { ... } 
 </td></tr><tr><td> 非IE6 </td><td style="text-align:left;"> html&gt;body selector { ... } 
@@ -240,7 +250,7 @@ B5M.WEB前端开发标准
 注意：SCSS会自动转换一些不标准CSS写法，会破坏CSS Hack。
 
 ### 5.10 CSS reset内容
-body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,input,button,textarea,p,blockquote,th,td{margin:0;padding:0}fieldset,img{border:0}:focus{outline:0}address,caption,cite,code,dfn,em,strong,th,var,optgroup{font-style:normal;font-weight:normal}h1,h2,h3,h4,h5,h6{font-size:100%;font-weight:normal}abbr,acronym{border:0;font-variant:normal}input,button,textarea,select,optgroup,option{font-family:inherit;font-size:inherit;font-style:inherit;font-weight:inherit}code,kbd,samp,tt{font-size:100%}input,button,textarea,select{*font-size:100%}ol,ul{list-style:none}table{border-collapse:collapse;border-spacing:0}caption,th{text-align:left}sup,sub{font-size:100%;vertical-align:baseline}:link,:visited,ins{text-decoration:none}blockquote,q{quotes:none}blockquote:before,blockquote:after,q:before,q:after{content:'';content:none}
+	body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,input,button,textarea,p,blockquote,th,td{margin:0;padding:0}fieldset,img{border:0}:focus{outline:0}address,caption,cite,code,dfn,em,strong,th,var,optgroup{font-style:normal;font-weight:normal}h1,h2,h3,h4,h5,h6{font-size:100%;font-weight:normal}abbr,acronym{border:0;font-variant:normal}input,button,textarea,select,optgroup,option{font-family:inherit;font-size:inherit;font-style:inherit;font-weight:inherit}code,kbd,samp,tt{font-size:100%}input,button,textarea,select{*font-size:100%}ol,ul{list-style:none}table{border-collapse:collapse;border-spacing:0}caption,th{text-align:left}sup,sub{font-size:100%;vertical-align:baseline}:link,:visited,ins{text-decoration:none}blockquote,q{quotes:none}blockquote:before,blockquote:after,q:before,q:after{content:'';content:none}
 
 ### 5.11 默认body设置
 `body{font: 12px/1.5 tahoma,arial,\5b8b\4f53; background: #fff;}`
