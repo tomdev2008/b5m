@@ -48,24 +48,24 @@ B5M.WEB前端开发标准
 1. 文件名称统一由小写的英文字母、数字、下划线组合而成，不允许使用汉字、空格、特殊字符  
 2. 文件名称要能直观的体现当前文件的文件类型、项目、内容性质  
 例：       
-    HTML文件：项目名/内容性质.html    
- 	    淘特价首页	/tao/index.html  
-        淘持价列表	/tao/list.html  
-  
-	CSS文件：项目名称.css  
-	    公共样式	common.css  
-	    淘特价样式	tao.css
-	    帮5游样式	you.css
-  
-	JS文件：公共框架：框架名+版本.js (必需是压缩版)  
-		Jquery公共库	 jquery-1.9.1.min.js  
-      	Jquery扩展	 jquery.easing.1.3.js  
-      	注：所有基于jquery的扩展都必需使用官网的命名，不允许修改  
-      	所有引用的第三方扩展需同团队成员共同讨论决定  
+HTML文件：项目名/内容性质.html    
+	    淘特价首页	/tao/index.html  
+    淘持价列表	/tao/list.html  
 
-      	手写文件：内容性质.js
-      	选项卡功能	tab.js
-      	消息弹窗	message.js
+CSS文件：项目名称.css  
+    公共样式	common.css  
+    淘特价样式	tao.css  
+    帮5游样式	you.css   
+
+JS文件：公共框架：框架名+版本.js (必需是压缩版)  
+	Jquery公共库	 jquery-1.9.1.min.js  
+  	Jquery扩展	 jquery.easing.1.3.js  
+  	注：所有基于jquery的扩展都必需使用官网的命名，不允许修改  
+  	所有引用的第三方扩展需同团队成员共同讨论决定    
+
+  	手写文件：内容性质.js  
+  	选项卡功能	tab.js  
+  	消息弹窗	message.js  
 
 
 ### 2.3 变量命名
@@ -141,7 +141,7 @@ http://staticcdn.b5m.com/
 
 ### 4.2 书写规则
 1. 使用HTML5标准文档结构  
-<code>
+```html
 <!doctype html>
 <html>
 	<head>
@@ -156,7 +156,7 @@ http://staticcdn.b5m.com/
 
 	</body>
 </html>
-</code>
+```
 
 2. 设置文本为UTF-8  
 `<meta charset="utf-8">`
