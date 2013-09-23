@@ -9,7 +9,7 @@ B5M.WEB前端开发标准
 
 ### 1.2 HTML页面兼容性标准
 
-<table width="50%">
+<table>
 <tbody><tr><td> </td><td> WinXP </td><td> Win7 </td><td> OS X 
 </td></tr><tr><td> IE9 </td><td> B  </td><td> B </td><td> 
 </td></tr><tr><td> IE8 </td><td> A  </td><td> A </td><td> 
@@ -42,14 +42,10 @@ B5M.WEB前端开发标准
 2. 文件夹名称要能直观的体现当前文件夹的项目或版本
 
 例：
-
 	帮5买   www
-
 	韩国馆  korea
-
 	淘物价  tao
-
-	        tao_1.0  淘特价1.0版本
+	tao_1.0  淘特价1.0版本
 
 
 ### 2.2 文件命名
