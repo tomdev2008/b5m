@@ -104,47 +104,9 @@ ins,a {
     text-decoration:none;
 }
 
-/* 清理浮动 */
-.fn-clear:after {
-    visibility:hidden;
-    display:block;
-    font-size:0;
-    content:" ";
-    clear:both;
-    height:0;
-}
-.fn-clear {
-    zoom:1; /* for IE6 IE7 */
-}
-
 /* 隐藏, 通常用来与 JS 配合 */
-body .fn-hide {
+.hide {
     display:none;
-}
-
-/* 设置内联, 减少浮动带来的bug */
-.fn-left,.fn-right {
-    display:inline;
-}
-.fn-left {
-    float:left;
-}
-.fn-right {
-    float:right;
-}
-
-/* 单行文字溢出时出现省略号，需设定宽度 */ 
-.fn-text-overflow {
-    overflow: hidden;
-    text-overflow: ellipsis;
-    white-space: nowrap;
-}
-
-/* 人民币符号 */
-.fn-rmb {
-    font-family: arial;
-    font-style: normal;
-    padding-right: 4px;
 }
 
 /* chrome 下字体过小的问题 */
@@ -152,8 +114,46 @@ body .fn-hide {
     -webkit-text-size-adjust: none;
 }
 
+/* 单行文字溢出时出现省略号，需设定宽度 */ 
+.tof {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+/* 人民币符号 */
+.rmb {
+    font-family: arial;
+    font-style: normal;
+    padding-right: 4px;
+}
+
 /* B5M网页容器 */
-.fn-wrap{
+.wrap{
 	width: 980px;
 	margin: 0 auto;
+}
+
+/* 清理浮动 */
+.cf:after {
+    visibility:hidden;
+    display:block;
+    font-size:0;
+    content:" ";
+    clear:both;
+    height:0;
+}
+.cf {
+    zoom:1; /* for IE6 IE7 */
+}
+
+/* 设置内联, 减少浮动带来的bug */
+.l,.r {
+    display:inline;
+}
+.l {
+    float:left;
+}
+.r {
+    float:right;
 }
