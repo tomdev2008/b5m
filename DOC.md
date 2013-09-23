@@ -15,12 +15,9 @@ B5M.WEB前端开发标准
 </td></tr><tr><td> IE8 </td><td> A  </td><td> A </td><td> 
 </td></tr><tr><td> IE7 </td><td> B  </td><td> B </td><td> 
 </td></tr><tr><td> IE6 </td><td> B  </td><td> B </td><td> 
-</td></tr><tr><td> Chrome16 </td><td> A  </td><td> A </td><td> A 
-</td></tr><tr><td> Chrome14 </td><td> A  </td><td> A </td><td> A 
-</td></tr><tr><td> Firefox10 </td><td> A </td><td> A </td><td> A 
-</td></tr><tr><td> Firefox9 </td><td> A  </td><td> A </td><td> A 
+</td></tr><tr><td> Chrome </td><td> A  </td><td> A </td><td> A 
+</td></tr><tr><td> Firefox </td><td> A </td><td> A </td><td> A 
 </td></tr><tr><td> Safari </td><td> B  </td><td> B </td><td> B 
-</td></tr><tr><td> Opera </td><td> C  </td><td> C </td><td> C 
 </td></tr></tbody></table>
 
 *  A级－交互和视觉完全符全设计的要求
