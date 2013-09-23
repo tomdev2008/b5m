@@ -114,20 +114,6 @@ ins,a {
     -webkit-text-size-adjust: none;
 }
 
-/* 单行文字溢出时出现省略号，需设定宽度 */ 
-.tof {
-    overflow: hidden;
-    text-overflow: ellipsis;
-    white-space: nowrap;
-}
-
-/* 人民币符号 */
-.rmb {
-    font-family: arial;
-    font-style: normal;
-    padding-right: 4px;
-}
-
 /* B5M网页容器 */
 .wrap{
 	width: 980px;
@@ -156,4 +142,18 @@ ins,a {
 }
 .r {
     float:right;
+}
+
+/* 单行文字溢出时出现省略号，需设定宽度 */ 
+.tof {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+/* 人民币符号 */
+.rmb {
+    font-family: arial;
+    font-style: normal;
+    padding-right: 4px;
 }
