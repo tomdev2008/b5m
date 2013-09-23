@@ -12,6 +12,12 @@ B5M.WEB前端开发标准
 1. 网页宽度统一设定
 
 	样式名：`.wrap`
+	```css
+		.wrap{
+			width: 980px;
+			margin: 0 auto;
+		}
+	```
 
 2. 清除浮动
 	
