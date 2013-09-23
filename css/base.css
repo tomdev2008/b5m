@@ -120,7 +120,7 @@ ins,a {
 	margin: 0 auto;
 }
 
-/* 清理浮动 */
+/* 清除浮动 */
 .cf:after {
     visibility:hidden;
     display:block;
