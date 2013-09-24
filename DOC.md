@@ -56,12 +56,12 @@ B5M.WEB前端开发规范
 	例：       
 	HTML文件：项目名/内容性质.html    
 		淘特价首页	/tao/index.html  
-	    淘持价列表	/tao/list.html  
+		淘持价列表	/tao/list.html  
 
 	CSS文件：项目名称.css  
-	    公共样式	common.css  
-	    淘特价样式	tao.css  
-	    帮5游样式	you.css   
+		公共样式	common.css  
+		淘特价样式	tao.css  
+		帮5游样式	you.css   
 
 	JS文件：公共框架：框架名+版本.js (必需是压缩版)  
 		Jquery公共库	 jquery-1.9.1.min.js  
@@ -69,9 +69,9 @@ B5M.WEB前端开发规范
 	  	注：所有基于jquery的扩展都必需使用官网的命名，不允许修改  
 	  	所有引用的第三方扩展需同团队成员共同讨论决定    
 
-	  	手写文件：内容性质.js  
-	  	选项卡功能	tab.js  
-	  	消息弹窗	message.js  
+  	手写文件：内容性质.js  
+  	选项卡功能	tab.js  
+  	消息弹窗	message.js  
 
 
 ### 2.3 变量命名
