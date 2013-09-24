@@ -165,7 +165,7 @@ http://staticcdn.b5m.com/
 ```
 
 2. 设置文本为UTF-8  
-`<meta charset="utf-8">`
+`html<meta charset="utf-8">`
 
 3. 设置 keywords  
 `<meta name="keywords" content="关键字" />`
