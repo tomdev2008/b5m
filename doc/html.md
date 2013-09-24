@@ -120,3 +120,46 @@ HTML代码：
 ```
 
 [演示](http://www.b5m.com)
+
+
+### 3. 搜索自动联想提示功能
+
+#### 功能介绍
+
+当用户在搜索框中键入内容后，程序会根据其键入的内容联想到相应的关键字并显示出来，以提醒用户直接选择
+
+#### 使用方法
+
+1. 在`head`引入相应的CSS文件
+```html
+<link rel="stylesheet" href="http://staticcdn.b5m.com/static/css/common/common.css" />
+```
+
+2. 在`</body>`前引入js文件
+```html
+<script type="text/javascript" src="http://staticcdn.b5m.com/static/scripts/common/down_list.js"></script>
+```
+
+3. 在相应的位置加入隐藏的提示框
+```html
+<div id="downList">
+    <div class="downList">
+        <ul id="list">
+
+        </ul>
+    </div>
+</div>
+```
+> 后期会将这段html整合到js中
+
+4. 在在`</body>`前引入隐藏的input元素
+```html
+<input autocomplete="off" type="hidden" id="ajaxCollection" value="b5mp" />
+<input autocomplete="off" type="hidden" id="hdnCurIndex" />
+<input autocomplete="off" type="hidden" id="hdnKeyTemp" />
+<input autocomplete="off" type="hidden" id="hdnTarget" value="http://s.b5m.com/search/s/___image________________%23keyword%23.html " />
+```
+
+[演示](http://10.10.99.218:81/static/html/tuan/index-v2.html)
+
+
