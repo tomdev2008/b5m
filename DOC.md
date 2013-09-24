@@ -274,7 +274,7 @@ http://staticcdn.b5m.com/
 
 ### 6.2 常量
 
-1. 使用大写加下划线的组合命名。如：var MY_APPNAME
+使用大写加下划线的组合命名。如：`var MY_APPNAME`
 
 ### 6.3 以分号结尾
 
