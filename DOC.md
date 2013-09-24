@@ -225,7 +225,7 @@ http://staticcdn.b5m.com/
         linear-gradient(#fff, #ccc),
         linear-gradient(#f3c, #4ec);
 }
-    ```
+```
 
 ### 5.7 多个(>2)selector每个占一行
 ```css
