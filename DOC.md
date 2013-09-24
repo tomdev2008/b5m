@@ -199,41 +199,40 @@ http://staticcdn.b5m.com/
 `<link rel="stylesheet" href="..." />`
 如遇特殊情况可使用：`<style>`...`</style>` ，严重杜绝在元素标签里写样式（特殊情况除外）
 
-### 5.3 尽量避免使用Filter
-	避免 CSS 表达式
+### 5.3 尽量避免使用Filter，避免 CSS 表达式
 
 ### 5.4 单行形式适用于直接写在页面中和长文件的情况。声明写在一行。
-	```css
-	.selector { property:value;property:value; }
-	```
+```css
+.selector { property:value;property:value; }
+```
 
 ### 5.5 CSS3兼容书写形式和对齐方式
-	```css
-	.selector { 
-		-webkit-box-shadow: 0 0 5px rgba(200, 200,200, 0.8);
-	    -moz-box-shadow: 0 0 5px rgba(200, 200,200, 0.8);
-	                          box-shadow: 0 0 5px rgba(200, 200,200, 0.8);
-	}
-	```
+```css
+.selector { 
+	-webkit-box-shadow: 0 0 5px rgba(200, 200,200, 0.8);
+    -moz-box-shadow: 0 0 5px rgba(200, 200,200, 0.8);
+                          box-shadow: 0 0 5px rgba(200, 200,200, 0.8);
+}
+```
 
 ### 5.6 CSS3中逗号分隔的长属性值
-	```css
-	.selector {
-        box-shadow:
-            1px 1px 1px #000,
-            2px 2px 1px 1px #ccc inset;
-        background-image:
-            linear-gradient(#fff, #ccc),
-            linear-gradient(#f3c, #4ec);
-    }
+```css
+.selector {
+    box-shadow:
+        1px 1px 1px #000,
+        2px 2px 1px 1px #ccc inset;
+    background-image:
+        linear-gradient(#fff, #ccc),
+        linear-gradient(#f3c, #4ec);
+}
     ```
 
 ### 5.7 多个(>2)selector每个占一行
-	```css
-	.selector1,
-	.selector2,
-	.selector3 { ... }
-	```
+```css
+.selector1,
+.selector2,
+.selector3 { ... }
+```
 
 ### 5.8 规则声明的顺序：定位、盒模型（width/height/padding/border/margin）、行高、字体/字号/颜色、背景、CSS3效果等
 
@@ -331,7 +330,7 @@ for (var key in obj) {
 
 ### 7.1 尽可能的使用png图片
 ### 7.2 全站引入通用样式
-	`<link rel="stylesheet" href="http://staticcdn.b5m.com/static/css/common/common.css" />`
+`<link rel="stylesheet" href="http://staticcdn.b5m.com/static/css/common/common.css" />`
 
 ### 7.3 全站页面宽度 980px （www搜索结果页除外）
 
