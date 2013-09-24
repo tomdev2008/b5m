@@ -165,23 +165,35 @@ http://staticcdn.b5m.com/
 ```
 
 2. 设置文本为UTF-8  
-```html<meta charset="utf-8">```
+```html
+<meta charset="utf-8" />
+```
 
 3. 设置 keywords  
-`<meta name="keywords" content="关键字" />`
+```html
+<meta name="keywords" content="关键字" />
+```
 
 4. 设置 description  
-`<meta name="keywords" content="页面描述" />`
+```html
+<meta name="keywords" content="页面描述" />
+```
 
 5. 设置外链样式  
-`<link rel="stylesheet" href="..." />`
+```html
+<link rel="stylesheet" href="..." />
+```
 
 6. 设置JavaScript地址  
-`<script src="..."></script>`  
+```html
+<script src="..."></script>
+```  
 注：除非特殊需要，可以考虑将JavaScript放置页面底部
 
 7. 考虑运用DNS预获取（dns-prefetch）  
-`<link rel=”dns-prefetch” href=”http://cdn.bang5mai.com”/>`
+```html
+<link rel=”dns-prefetch” href=”http://cdn.bang5mai.com”/>
+```
 
 8. 如为解决 IE 6 兼容性问题，要单独引用CSS  
 ```html
@@ -195,8 +207,10 @@ http://staticcdn.b5m.com/
 
 ### 5.1 所有CSS标签、属性必须由小写字母、数字、中划线组合
 
-### 5.2 非特殊情况下，样式文件必须外链至<head>… </head>之间，写法如下：
-`<link rel="stylesheet" href="..." />`
+### 5.2 非特殊情况下，样式文件必须外链至`<head>`…`</head>`之间，写法如下：
+```html
+<link rel="stylesheet" href="..." />
+```
 如遇特殊情况可使用：`<style>`...`</style>` ，严重杜绝在元素标签里写样式（特殊情况除外）
 
 ### 5.3 尽量避免使用Filter，避免 CSS 表达式
@@ -290,6 +304,15 @@ for (var key in obj) {
 }
 ```
 
+```js 
+for (var key in obj) {
+	if (_.has(obj, key)) {
+		if (iterator.call(context, obj[key], key, obj) === breaker)
+		return;
+	}
+}
+```
+
 ### 6.5 函数声明与函数表达式
 
 在函数块内，推荐使用表达式。如：`var getName = function(){}`，而不是`function getName(){}`
@@ -330,7 +353,9 @@ for (var key in obj) {
 
 ### 7.1 尽可能的使用png图片
 ### 7.2 全站引入通用样式
-`<link rel="stylesheet" href="http://staticcdn.b5m.com/static/css/common/common.css" />`
+```html
+<link rel="stylesheet" href="http://staticcdn.b5m.com/static/css/common/common.css" />
+```
 
 ### 7.3 全站页面宽度 980px （www搜索结果页除外）
 
