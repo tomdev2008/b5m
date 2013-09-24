@@ -211,7 +211,7 @@ http://staticcdn.b5m.com/
 .selector { 
 	-webkit-box-shadow: 0 0 5px rgba(200, 200,200, 0.8);
     -moz-box-shadow: 0 0 5px rgba(200, 200,200, 0.8);
-                          box-shadow: 0 0 5px rgba(200, 200,200, 0.8);
+	box-shadow: 0 0 5px rgba(200, 200,200, 0.8);
 }
 ```
 
