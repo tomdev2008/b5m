@@ -52,7 +52,7 @@ B5M.WEB前端开发规范
 1. 文件名称统一由小写的英文字母、数字、下划线组合而成，不允许使用汉字、空格、特殊字符  
 
 2. 文件名称要能直观的体现当前文件的文件类型、项目、内容性质  
-  
+
 	例：       
 	HTML文件：项目名/内容性质.html    
 		淘特价首页	/tao/index.html  
@@ -137,12 +137,12 @@ http://staticcdn.b5m.com/
 7. 特殊符号使用：尽可能使用代码替代: 比如 <(&lt;)、>(&gt;)、空格(&nbsp;)等等；
 
 8. 必须为含有描述性表单元素(input，textarea)添加label
-<code>
+```html
 <p>
 	<label for="name">姓 名: </label>
 	<input type="text" id="name" />
 </p>
-</code>
+```
 
 
 ### 4.2 书写规则
@@ -184,10 +184,11 @@ http://staticcdn.b5m.com/
 `<link rel=”dns-prefetch” href=”http://cdn.bang5mai.com”/>`
 
 8. 如为解决 IE 6 兼容性问题，要单独引用CSS  
-`<!--[if IE 6]>
+```html
+<!--[if IE 6]>
 	<link rel="stylesheet" href="..." />
-<![endif]-->`
-
+<![endif]-->
+```
 
 
 ## 五、CSS书写规范
@@ -196,7 +197,7 @@ http://staticcdn.b5m.com/
 
 ### 5.2 非特殊情况下，样式文件必须外链至<head>… </head>之间，写法如下：
 `<link rel="stylesheet" href="..." />`
-如遇特殊情况可使用：`<style>`...`</style>`` ，严重杜绝在元素标签里写样式（特殊情况除外）
+如遇特殊情况可使用：`<style>`...`</style>` ，严重杜绝在元素标签里写样式（特殊情况除外）
 
 ### 5.3 尽量避免使用Filter
 	避免 CSS 表达式
