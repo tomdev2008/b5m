@@ -91,31 +91,36 @@ http://staticcdn.b5m.com/
 
 
 ###3.2 目录结构
-	/static						------	存放前端代码
-		/html
-			/header.html		------	统一顶部文件
-			/footer.html		------	统一底部文件
-		/css
-			/common
-				/common.css		------	公共样式，如reset / header / footer
-			/tao				------	“淘特价”项目样式
-				/index.css	
-				/style.css
-			/you				------	“帮5游”项目样式
-				/index.css
-	               
-		/images
-			/common				------	统一header、footer图片
-			/tao
-			/you
 
-		/scripts
-			/common				------	公共JS库
-				/jquery-1.9.1.min.js
-			/tao
-			/you
-
-		/public					------	其它静态资源 xml、swf
+.
+└──static									--- 存放前端代码
+    ├── html
+    	├── common							
+    	├── tao
+    	├── you								
+    	├── header.html
+    	└── footer.html
+    ├── css              					--- 样式目录
+		├── common
+			├── common.css 					--- 公共样式，如reset / header / footer
+			└── common.min.css	
+		├── tao
+			├── index.css
+			└── style.css
+		└── you
+			└── style.css   	
+    ├── images
+    	├── common 							--- 图片目录
+    	├── tao
+		└── you
+	├── scripts              				--- 脚本目录
+		├── common
+			└── jquery-1.9.1.min.js	
+		├── tao
+			├── index.js
+			└── down-list.js
+		└── you 
+    └── public								--- 其它静态资源 xml、swf
 
 
 
@@ -296,15 +301,6 @@ http://staticcdn.b5m.com/
 
 在关键字、运算符等前后加空格，起始大括号后换行，便于阅读。如:
 ```javascript 
-for (var key in obj) {
-	if (_.has(obj, key)) {
-		if (iterator.call(context, obj[key], key, obj) === breaker)
-		return;
-	}
-}
-```
-
-```js 
 for (var key in obj) {
 	if (_.has(obj, key)) {
 		if (iterator.call(context, obj[key], key, obj) === breaker)
