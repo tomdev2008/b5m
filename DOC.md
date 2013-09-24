@@ -92,35 +92,35 @@ http://staticcdn.b5m.com/
 
 ###3.2 目录结构
 
-.  
-└──static									--- 存放前端代码  
-    ├── html
-    	├── common	 						
-    	├── tao  
-    	├── you	  							
-    	├── header.html  
-    	└── footer.html  
-    ├── css              					--- 样式目录  
-		├── common  
-			├── common.css 					--- 公共样式，如reset / header / footer  
-			└── common.min.css	  
-		├── tao  
-			├── index.css  
-			└── style.css  
-		└── you  
-			└── style.css     	
-    ├── images  
-    	├── common 							--- 图片目录  
-    	├── tao  
-		└── you  
-	├── scripts              				--- 脚本目录  
-		├── common  
-			└── jquery-1.9.1.min.js	  
-		├── tao  
-			├── index.js  
-			└── down-list.js  
-		└── you   
-    └── public								--- 其它静态资源 xml、swf  
+	.  
+	└──static									--- 存放前端代码  
+	    ├── html
+	    	├── common	 						
+	    	├── tao  
+	    	├── you	  							
+	    	├── header.html  
+	    	└── footer.html  
+	    ├── css              					--- 样式目录  
+			├── common  
+				├── common.css 					--- 公共样式，如reset / header / footer  
+				└── common.min.css	  
+			├── tao  
+				├── index.css  
+				└── style.css  
+			└── you  
+				└── style.css     	
+	    ├── images  
+	    	├── common 							--- 图片目录  
+	    	├── tao  
+			└── you  
+		├── scripts              				--- 脚本目录  
+			├── common  
+				└── jquery-1.9.1.min.js	  
+			├── tao  
+				├── index.js  
+				└── down-list.js  
+			└── you   
+	    └── public								--- 其它静态资源 xml、swf  
 
 
 
