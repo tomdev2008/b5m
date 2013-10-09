@@ -122,8 +122,9 @@ HTML代码：
 [演示](http://www.b5m.com)
 
 
-### 3. [autoFill搜索自动联想提示功能](doc/js.autoFill.md)
+### 3. autoFill搜索自动联想提示功能
 
+[查看文档](https://github.com/nipao/b5m/blob/master/doc/js.autoFill.md)
 
 [演示](http://10.10.99.218/static/html/www/www.html)
 
