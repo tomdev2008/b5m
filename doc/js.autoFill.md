@@ -7,7 +7,9 @@ B5M.WEB前端开发标准
 主要用于网站搜索，用户在搜索框中键入关键字后，系统会自动提示相应的关键字以便用户选择
 
 
-### jquery原型方法： `autoFill (url:String,site:String,[callback:Function]):jQueryObject`
+### jquery原型方法
+
+`autoFill (url:String,site:String,[callback:Function]):jQueryObject`
 
 ### 概述
 
@@ -59,6 +61,7 @@ aufoFill列表隐藏时在`$(selector)`触发`listhide`事件
 
 2. 在`</body>`前引入js文件
 ```html
+<script type="text/javascript" src="http://staticcdn.b5m.com/static/scripts/common/jquery-1.9.1.min.js"></script>
 <script type="text/javascript" src="http://staticcdn.b5m.com/static/scripts/common/autofill-1.1.min.js"></script>
 ```
 
