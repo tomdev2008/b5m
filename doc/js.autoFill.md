@@ -62,7 +62,7 @@ aufoFill列表隐藏时在`$(selector)`触发`listhide`事件
 2. 在`</body>`前引入js文件
 ```html
 <script type="text/javascript" src="http://staticcdn.b5m.com/static/scripts/common/jquery-1.9.1.min.js"></script>
-<script type="text/javascript" src="http://staticcdn.b5m.com/static/scripts/common/autofill-1.1.min.js"></script>
+<script type="text/javascript" src="http://staticcdn.b5m.com/static/scripts/common/autoFill.js"></script>
 ```
 
 3. 选择input对象装载功能
